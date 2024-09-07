@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-left {
+    flex: 1;
+}
+
+.nav-center {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+#logo {
+    width: 60px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    display: inline-block;
+    color: white;
+    width: 130px;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s, background-color 0.3s ease-in-out ;
+}
+
+nav li a:hover{
+    background: white;
+    color: black;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #444; /* Cor de fundo do dropdown */
+    color: #fff; /* Cor do texto do dropdown */
+    position: absolute;
+    height: auto;
+    width: 0px;
+    top: 100%; /* Posiciona o dropdown abaixo do item do menu */
+    left: 0;
+    z-index: 2; /* Garante que o dropdown esteja acima do nav */
+}
+.dropdown-menu a {
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    background-color: black;
+    display: block;
+}
+
+.dropdown-suv {
+    display: none;
+    background-color: #444;
+    color: #fff; /* Cor do texto do dropdown */
+    position: absolute;
+    top: 100%;
+    left: 133px;
+    z-index: 2;
+}
+
+.dropdown-suv a {
+    display: block;
+}
+
+.dropdown2:hover .dropdown-suv{
+    background-color: #000;
+    display: block;
+}
+
+
+
+/* DETAILS*/
+details {
+    background-color: #000; /* Cor de fundo do dropdown */
+    color: #fff; /* Cor do texto do dropdown */
+    width: 130px;
+    height: auto;
+    top: 100%; /* Posiciona o dropdown abaixo do item do menu */
+    left: 0;
+    z-index: 999; /* Garante que o dropdown esteja acima do nav */
+    transition: color 0.3s, background-color 0.3s ease-in-out ;
+}
+
+summary {
+    list-style: none;
+    padding: 15px;
+}
+
+summary:active {
+    background-color: black;
+    color: black;
+}
+
+summary::marker {
+    display: none;
+}
+
+details summary {
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cars {
+    text-align: center;
+    padding: 8px 10px;
+}
+
+.iconlogin, .iconlogin a {
+    width: 50px;
+    height: auto;
+    color: white;
+}
+
+.Login {
+    width: 24px;
+    height: auto;
+}
+
+.ButtonAccount {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border: none;
+}
+
+.ButtonAccount a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.ButtonAccount img{
+    margin-right: 5px;
+}

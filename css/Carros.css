@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 900;
+    color: #000;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 840px;
+}
+
+section.module p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+section.module.content {
+    color: white;
+    padding: 40px 0;
+    background: black;
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 60%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 60%, #000 100%);
+    background: -o-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 60%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 60%, #000 100%);
+}
+
+section.module.parallax h1{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 78px;
+    text-transform: uppercase;
+    z-index: 50;
+}
+
+section.module.parallax h2{
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.container2 ul li {
+    margin: 0 0 10px 0;
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container2 h3{
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.container2 {
+    margin: 0 auto;
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    height: 840px;
+}
+
+.quadrante {
+    list-style-type: none;
+    width: 100%;
+    max-width: 600px;
+    margin-right: 50px;
+}
+
+.container2 h2{
+    text-transform: uppercase;
+}
+
+.buttonview {
+    position: fixed; /* Para fixar a posição dos botões na tela */
+    right: 30px; /* Alinhando à direita */
+    bottom: 30px; /* Alinhando na parte inferior */
+    z-index: 1000; /* Um z-index maior para garantir que esteja acima de outros elementos */
+    display: flex;
+    flex-direction: column; /* Para que os botões fiquem empilhados verticalmente */
+    gap: 5px; /* Espaçamento entre os botões */
+}
+
+.scrolltop {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    border: 0;
+    backdrop-filter: blur(20px);
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    margin-left: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+}
+
+.scrolltop.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scrolltop img {
+    width: 100%;
+}
+
+.viewsection, .viewsection2 {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0; /* Borda dos botões */
+    padding: 10px; /* Espaçamento interno dos botões */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mão ao passar o mouse */
+    color: white;
+    transition: background-color 0.3s, opacity 0.4s ease, visibility 0.4s ease; /* Efeito ao passar o mouse e transição de visibilidade */
+    margin-bottom: 10px;
+    text-align: center; /* Centraliza o texto dentro dos botões */
+    opacity: 1; /* Inicialmente visível */
+    visibility: visible; /* Inicialmente visível */
+    transition: all .4s ease;
+}
+
+.viewsection.active, .viewsection2.active {
+    opacity: 0; /* Torna o botão invisível */
+    visibility: hidden; /* Torna o botão invisível */
+}
+
+.viewsection:hover, .viewsection2:hover {
+    background-color: #f0f0f0; /* Efeito ao passar o mouse */
+}
+
+
+

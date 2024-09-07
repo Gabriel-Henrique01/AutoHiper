@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px; /* Ajustar conforme necessário */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-left {
+    flex: 1;
+}
+
+.nav-center {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    height: 60px;
+}
+
+#logo {
+    width: 60px;
+    height: auto; /* Adicionado para manter a proporção da imagem */
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    display: inline-block;
+    color: white;
+    width: 130px;
+    padding: 10px; /* Reduzir o padding */
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s, background-color 0.3s ease-in-out;
+}
+
+nav li a:hover {
+    background: white;
+    color: black;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #444; /* Cor de fundo do dropdown */
+    color: #fff; /* Cor do texto do dropdown */
+    position: absolute;
+    width: 100%; /* Ajustar largura conforme necessário */
+    top: 100%; /* Posiciona o dropdown abaixo do item do menu */
+    left: 0;
+    z-index: 2; /* Garante que o dropdown esteja acima do nav */
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px; /* Ajustar padding conforme necessário */
+}
+
+.dropdown:hover .dropdown-menu {
+    background-color: black;
+    display: block;
+}
+
+.dropdown-suv {
+    display: none;
+    background-color: #444;
+    color: #fff; /* Cor do texto do dropdown */
+    position: absolute;
+    top: 100%;
+    left: 133px;
+    z-index: 2;
+}
+
+.dropdown-suv a {
+    display: block;
+    padding: 10px; /* Ajustar padding conforme necessário */
+}
+
+.dropdown2:hover .dropdown-suv {
+    background-color: #000;
+    display: block;
+}
+
+details {
+    background-color: #000; /* Cor de fundo do dropdown */
+    color: #fff; /* Cor do texto do dropdown */
+    width: 130px;
+    height: auto;
+    top: 100%; /* Posiciona o dropdown abaixo do item do menu */
+    left: 0;
+    z-index: 3; /* Garante que o dropdown esteja acima do nav */
+    transition: color 0.3s, background-color 0.3s ease-in-out;
+}
+
+summary {
+    list-style: none;
+    padding: 10px; /* Reduzir o padding */
+}
+
+summary:active {
+    background-color: black;
+    color: black;
+}
+
+summary::marker {
+    display: none;
+}
+
+details summary {
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cars {
+    text-align: center;
+    padding: 8px 10px;
+}
+
+#iconlogin {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-right: 20px;
+}
+
+#Login {
+    width: 36px;
+    
+    height: auto;
+}
+
+.sidebar {
+    margin-top: 60px;
+    width: 250px;
+    height: 100vh;
+    background-color: #000;
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed; /* Alterado para fixed para manter a barra lateral fixa */
+    top: 0;
+    left: 0;
+    z-index: 2; /* Garante que a barra lateral esteja acima do conteúdo principal */
+}
+
+.sidebar-header {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.menu-item {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #fff; /* Cor do texto padrão */
+    width: 100%; /* Para que o link ocupe toda a área do menu-item */
+}
+
+.menu-item:hover {
+    background-color: #fff; /* Muda o fundo para branco */
+}
+
+.menu-item:hover a {
+    color: #000; /* Muda a cor do texto para preto ao passar o mouse */
+}
+
+.menu-item span {
+    font-size: 16px;
+}
+
+.menu-item.active {
+    background-color: #333;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: 250px;
+    margin-top: 60px; /* Ajustado para dar espaço ao header fixo */
+}
+
+.tabela {
+    width: 100%; /* Opcional: Faz a tabela ocupar a largura do contêiner */
+    overflow-x: auto; /* Adiciona uma barra de rolagem se necessário */
+}
+
+.central {
+    width: 600px;
+}
+
+table {
+    width: 100%; /* Ajuste a largura da tabela conforme necessário */
+    border-collapse: collapse; /* Para evitar espaço entre as bordas das células */
+}
+
+th, td {
+    padding: 10px; /* Adiciona um espaçamento interno nas células */
+    border: 1px solid #000; /* Adiciona bordas às células */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.ButtonEdit {
+    display: flex;
+    align-items: center;
+    background-color: #ffdb58;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.ButtonRemove {
+    display: flex;
+    align-items: center;
+    background-color: #ff4040;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.ButtonRemove a, .ButtonEdit a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.action-buttons button {
+    border: none; /* Remove a borda padrão do botão */
+    background: none; /* Remove o fundo padrão do botão */
+    cursor: pointer; /* Mostra que é clicável */
+    padding: 10px; /* Aumenta a área clicável */
+}
+
+.ButtonEdit img, .ButtonRemove img {
+    width: 20px; /* Ajuste a largura da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}

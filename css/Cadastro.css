@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homeIcon {
+    position: absolute;
+    z-index: 5;
+    margin: 10px;
+    width: 36px;
+    height: auto;
+}
+
+.conteudo {
+    position: relative;
+    width: 100%; /* Ajuste conforme necessário */
+    height: 100vh; /* Ajuste conforme necessário */
+    overflow: hidden; /* Para garantir que o vídeo e a imagem não ultrapassem os limites */
+}
+
+.background{
+    position: absolute;
+    height: 100vh !important;
+    width: 100%;
+    z-index: 1;
+}
+
+.tudo {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+
+form h1{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+label{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+form {
+    width: 400px;
+    padding: 40px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    backdrop-filter: blur(10px);
+    background-color: rgba(46, 46, 46, 0.6);
+    z-index: 3;
+}
+
+/* Estilo do input de texto */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"] {
+    width: 70%;
+    padding: 5px 0 0 0 ;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+}
+
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.error {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.login {
+    color: #fff;
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.login a {
+    text-decoration: none;
+    color: lightgreen;
+}
+

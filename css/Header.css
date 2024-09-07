@@ -1,0 +1,87 @@
+/* Header.css */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-left ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.nav-left ul li .dropdown-menu, .nav-left ul li .dropdown-suv {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.nav-left ul li:hover .dropdown-menu, .nav-left ul li:hover .dropdown-suv {
+    display: block;
+}
+
+.nav-left ul li .dropdown-menu details, .nav-left ul li .dropdown-suv a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.nav-center {
+    text-align: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+#iconlogin {
+    margin-left: 20px;
+}
+
+#Login {
+    height: 30px;
+    width: 30px;
+}
+
+.scrolltop.active {
+    display: block;
+}
+
+.viewsection.active,
+.viewsection2.active {
+    background-color: #555;
+    color: white;
+}

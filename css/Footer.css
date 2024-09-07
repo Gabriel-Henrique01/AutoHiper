@@ -1,0 +1,89 @@
+.footer {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.Linhadiv {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.container3{
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.quadrante2 {
+    position: relative;
+    padding-bottom: 50px;
+    list-style-type: none;
+    width: 100%;
+    max-width: 600px;
+}
+
+.quadrante2 li {
+    justify-content: center;
+    list-style-type: none;       
+    padding: 5px 0;
+}
+
+.quadrante2 .logo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 130px;
+    margin-bottom: 50px;
+}
+
+.container3 h2{
+    text-transform: uppercase;
+}
+
+.container3 h3 {
+    color: white;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+
+
+.Social-container {
+    display: flex;
+    align-items: center;
+}
+
+.Social-container h3 {
+    margin: 0;
+}
+
+.Button_Footer {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid white;
+    font-weight: 600;
+    transition: transform 0.5s, background-color 0.5s, color 0.5s, font-weight 0.5s, border 0.5s ease-in-out;
+    
+}
+
+.Button_Footer:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    font-weight: 700;
+    transform: scale(1.1);
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+}
+
+section.module {
+    background: #0e0e0e;
+}

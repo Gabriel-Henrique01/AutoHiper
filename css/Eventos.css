@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module-container, section.module-content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh !important;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module-content2:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 90%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 90%, #000 100%);
+    background: -o-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 90%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 90%, #000 100%);
+}
+
+section.module-container h1 {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 78px;
+    text-transform: uppercase;
+}
+
+section.module-content, section.module-content2{
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.sectioncard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards {
+    display: flex;
+    margin: 0 50px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    max-width: 400px;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.cards img {
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    background-position: 50% 50%;
+    height: 200px;
+}
+
+.cards h1 {
+    margin: 15px 0;
+}
+
+.cards p {
+    flex-grow: 1; /* Permite que o parágrafo ocupe o espaço restante */
+    margin: 15px; /* Margem inferior para o texto */
+}
+
+.InterHiper, .Le_Auto, .Formula_Cars  {
+    align-self: center; /* Alinha o botão à esquerda */
+    margin-top: auto; /* Move o botão para a parte inferior */
+    padding: 10px 20px; /* Preenchimento do botão */
+    margin-bottom: 20px;
+    background-color: #333; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas no botão */
+    cursor: pointer; /* Cursor de pointer para indicar que é clicável */
+    transition: background-color 0.3s; /* Efeito de transição na cor de fundo */
+}
+
+.scroll-btn:hover {
+    background-color: #000; /* Cor do botão ao passar o mouse */
+}
+
+section.module-content2 {
+    justify-content: center;
+    align-items: center;
+}
+
+.InterContent {
+    display: flex;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 700px;
+    height: 300px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.InterContent p {
+    max-width: 600px;
+}
+
+.InterContent h1 {
+    margin-bottom: 50px;
+}
+
+.buttonview {
+    position: fixed; /* Para fixar a posição dos botões na tela */
+    right: 30px; /* Alinhando à direita */
+    bottom: 30px; /* Alinhando na parte inferior */
+    z-index: 1000; /* Um z-index maior para garantir que esteja acima de outros elementos */
+    display: flex;
+    flex-direction: column; /* Para que os botões fiquem empilhados verticalmente */
+    gap: 5px; /* Espaçamento entre os botões */
+}
+
+.scrolltop {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    border: 0;
+    backdrop-filter: blur(20px);
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    margin-left: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+}
+
+.scrolltop.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scrolltop img {
+    width: 100%;
+}
